@@ -1,10 +1,16 @@
 module.exports = {
   root: true,
-  extends: 'vuepress',
+  'extends': ['eslint:recommended', 'plugin:react/recommended'],
   overrides: [
     {
       files: ['*.ts'],
-      extends: 'vuepress-typescript',
+      extends: [
+        'plugin:@typescript-eslint/recommended'
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser'
+      },
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },

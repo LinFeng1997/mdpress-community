@@ -11,7 +11,7 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      packages.map(name => name.replace(/^vuepress-/, '')),
+      packages.map(name => name.replace(/^mdpress-/, '')),
     ],
   },
 }

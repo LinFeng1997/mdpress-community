@@ -1,5 +1,5 @@
 node_modules/
-!.vuepress/
+!.mdpress/
 !.eslintrc.js
 !.commitlintrc.js
 lib/
