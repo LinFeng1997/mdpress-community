@@ -1,0 +1,15 @@
+{
+  "name": "docs",
+  "version": "1.0.11",
+  "private": true,
+  "scripts": {
+    "build": "mdpress build src --temp .temp --dest dist",
+    "dev": "mdpress dev src --temp .temp",
+    "lint": "eslint --fix --ext .js src/.mdpress",
+    "serve": "mdpress serve src --dest dist"
+  },
+  "dependencies": {
+    "@mdpress/plugin-back-to-top": "^1.0.0-rc.6",
+    "mdpress": "^1.0.0-rc.6"
+  }
+}

@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "boot": "lerna bootstrap --registry http://r.cnpmjs.org/",
     "build": "lerna run build --stream --ignore docs",
     "build:docs": "yarn workspace docs build",
     "dev": "yarn workspace docs dev --no-cache",
@@ -45,11 +46,11 @@
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^3.16.4",
     "lint-staged": "^10.2.2",
+    "mdpress": "^1.0.0-rc.6",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.42.2",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.8.3",
-    "mdpress": "^1.0.0-rc.6"
+    "typescript": "^3.8.3"
   }
 }
