@@ -37,7 +37,7 @@ export interface ThemeConfig {
 }
 
 /**
- * @see https://vuepress.vuejs.org/config
+ * @see https://linfeng1997.github.io/mdpress/config
  */
 export interface SiteConfig {
   // Basic Config
