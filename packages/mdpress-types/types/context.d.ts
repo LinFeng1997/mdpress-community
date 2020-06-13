@@ -1,6 +1,6 @@
 import { ClientComputedMixin } from './computed'
 import { PluginConfig, SiteConfig, ThemeConfig } from './config'
-import { Markdown } from './markdown'
+import Markdown from 'markdown-it'
 import { Page, PageOptions, PageComputed } from './page'
 import { PluginAPI } from './plugin-api'
 import { ThemeAPI } from './theme-api'
