@@ -6,10 +6,11 @@
     "build": "mdpress build src --temp .temp --dest dist",
     "dev": "mdpress dev src --temp .temp",
     "lint": "eslint --fix --ext .js src/.mdpress",
-    "serve": "mdpress serve src --dest dist"
+    "serve": "mdpress serve src --dest dist -p 8081"
   },
   "dependencies": {
     "@mdpress/plugin-back-to-top": "^1.0.0-rc.6",
-    "mdpress": "^1.0.0-rc.6"
+    "mdpress": "^1.0.0-rc.6",
+    "mdpress-plugin-serve": "^1.0.0-rc.6"
   }
 }

@@ -12,7 +12,10 @@ module.exports = () => ({
     ["meta", { name: "msapplication-TileColor", content: "#000000" }],
   ],
 
-  plugins: [["@mdpress/back-to-top"]],
+  plugins: [
+    ["@mdpress/back-to-top"],
+    ['serve'],
+  ],
 
   locales: {
     "/en/": {

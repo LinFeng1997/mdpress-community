@@ -15,7 +15,7 @@
     "url": "git+https://github.com/mdpress/mdpress-community.git"
   },
   "license": "MIT",
-  "author": "meteorlxy <meteor.lxy@foxmail.com>",
+  "author": "LinFeng1997",
   "types": "types/index.d.ts",
   "files": [
     "types"
