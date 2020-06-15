@@ -1819,6 +1819,11 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
+"@types/smoothscroll-polyfill@^0.3.1":
+  version "0.3.1"
+  resolved "https://r.cnpmjs.org/@types/smoothscroll-polyfill/download/@types/smoothscroll-polyfill-0.3.1.tgz#77fb3a6e116bdab4a5959122e3b8e201224dcd49"
+  integrity sha1-d/s6bhFr2rSllZEi47jiASJNzUk=
+
 "@types/source-list-map@*":
   version "0.1.2"
   resolved "https://r.cnpmjs.org/@types/source-list-map/download/@types/source-list-map-0.1.2.tgz#0078836063ffaf17412349bba364087e0ac02ec9"
@@ -11354,6 +11359,11 @@ smart-buffer@^4.1.0:
   version "4.1.0"
   resolved "https://r.cnpmjs.org/smart-buffer/download/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha1-kWBcJdkWUvRmHqacz0XxszHKIbo=
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://r.cnpmjs.org/smoothscroll-polyfill/download/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha1-OiWRMdxpMObKgAA+HLA7YDtpq/g=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

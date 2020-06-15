@@ -15,6 +15,7 @@ module.exports = () => ({
   plugins: [
     ["@mdpress/back-to-top"],
     ['serve'],
+    ['smooth-scroll'],
   ],
 
   locales: {
