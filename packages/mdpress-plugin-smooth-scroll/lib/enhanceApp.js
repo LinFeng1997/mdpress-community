@@ -1,8 +1,7 @@
 import smoothscroll from "smoothscroll-polyfill";
-// @ts-ignore
-import store from "@app/store";
 import "../styles/index.styl";
 import { useEffect } from "react";
+const store = require("@app/store").default;
 function getElementPosition(el) {
     const docEl = document.documentElement;
     const docRect = docEl.getBoundingClientRect();
@@ -26,7 +25,7 @@ const enhanceApp = ({ routes, hooks }) => {
         //     behavior: 'smooth',
         //   })
         // }
-      if (location.hash) {
+        if (location.hash) {
             if (store.$get("disableScrollBehavior")) {
                 return false;
             }
