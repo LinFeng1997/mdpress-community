@@ -16,6 +16,7 @@ module.exports = () => ({
     ["@mdpress/back-to-top"],
     ['serve'],
     ['smooth-scroll'],
+    ['flowchart']
   ],
 
   locales: {

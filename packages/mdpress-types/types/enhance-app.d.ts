@@ -6,6 +6,18 @@ export interface Route extends RouteProps {
 }
 
 type Hook = Function;
+interface MdConfig {
+  lineNumbers?: boolean;
+  slugify?: Function;
+  anchor?: {
+    permalink?: boolean;
+    permalinkBefore?: boolean;
+    permalinkSymbol?: string;
+  };
+  externalLinks?: Record<string, string>;
+  toc?: Record<string, any>;
+  extractHeaders?: string[];
+}
 export type EnhanceApp = (options: {
   sandbox: {
     [key: string]: any;
@@ -16,4 +28,5 @@ export type EnhanceApp = (options: {
   hooks: Hook[];
   siteData: SiteData;
   isServer: boolean;
+  mdConfig: MdConfig;
 }) => void;
