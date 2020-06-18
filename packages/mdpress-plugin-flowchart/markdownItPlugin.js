@@ -14,9 +14,9 @@ module.exports = function flowchartPlugin(md, options = {}) {
     const key = `flowchart_${hash(idx)}`;
     const { content, info } = token;
 
-    const code = `<FlowChart id="${key}" code={${JSON.stringify(content)}} preset={${
+    const code = `<FlowChart id="${key}" code={${JSON.stringify(content)}} preset={"${
       info.trim() || "mdpress"
-    }}></FlowChart>`;
+    }"}></FlowChart>`;
 
     return renderSimpleComponent(md["md-it-rc-replacer"], code);
   }
