@@ -1346,6 +1346,62 @@
     webpack-merge "^4.1.2"
     webpackbar "3.2.0"
 
+"@mdpress/core@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/core/download/@mdpress/core-1.0.0-rc.8.tgz#c7b2249e15946e8815631a4d488fc0b2d269958d"
+  integrity sha1-x7IknhWUbogVYxpNSI/AstJplY0=
+  dependencies:
+    "@babel/core" "^7.8.4"
+    "@mdpress/markdown" "1.0.0-rc.8"
+    "@mdpress/markdown-browser" "1.0.0-rc.8"
+    "@mdpress/markdown-loader" "1.0.0-rc.8"
+    "@mdpress/plugin-last-updated" "1.0.0-rc.8"
+    "@mdpress/shared-utils" "1.0.0-rc.8"
+    autoprefixer "^9.5.1"
+    babel-core "^6.26.3"
+    babel-loader "^7.1.5"
+    babel-plugin-react-html-attrs "^2.1.0"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-transform-class-properties "^6.24.1"
+    babel-plugin-transform-runtime "^6.23.0"
+    babel-preset-es2015 "^6.24.1"
+    babel-preset-es2017 "^6.24.1"
+    babel-preset-react "^6.24.1"
+    babel-preset-stage-3 "^6.24.1"
+    cache-loader "^3.0.0"
+    chokidar "^2.0.3"
+    classnames "^2.2.6"
+    connect-history-api-fallback "^1.5.0"
+    copy-webpack-plugin "^5.0.2"
+    core-js "^3.6.4"
+    cross-spawn "^6.0.5"
+    css-loader "^2.1.1"
+    file-loader "^3.0.1"
+    html-webpack-plugin "3.2.0"
+    js-yaml "^3.13.1"
+    lru-cache "^5.1.1"
+    markdown-it-react-component "^0.5.5"
+    mini-css-extract-plugin "0.6.0"
+    optimize-css-assets-webpack-plugin "^5.0.1"
+    portfinder "^1.0.13"
+    postcss-loader "^3.0.0"
+    postcss-safe-parser "^4.0.1"
+    react-dom "^16.4.1"
+    react-loadable "^5.4.0"
+    react-router-dom "^5.1.2"
+    react-router-scroll-4 "^1.0.0-beta.2"
+    sass-loader "^7.0.3"
+    style-loader "^0.21.0"
+    stylus "^0.54.5"
+    stylus-loader "^3.0.2"
+    toml "^3.0.0"
+    url-loader "^1.0.1"
+    webpack "^4.8.1"
+    webpack-chain "^6.0.0"
+    webpack-dev-server "3.8.2"
+    webpack-merge "^4.1.2"
+    webpackbar "3.2.0"
+
 "@mdpress/markdown-browser@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/markdown-browser/download/@mdpress/markdown-browser-1.0.0-rc.6.tgz#78275888490a05985643e9300d2059aeab26008f"
@@ -1354,12 +1410,29 @@
     "@mdpress/markdown" "1.0.0-rc.6"
     prismjs "^1.15.0"
 
+"@mdpress/markdown-browser@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/markdown-browser/download/@mdpress/markdown-browser-1.0.0-rc.8.tgz#72803cd7b430feaf8c9ec0ecd01a42090b910471"
+  integrity sha1-coA817Qw/q+MnsDs0BpCCQuRBHE=
+  dependencies:
+    "@mdpress/markdown" "1.0.0-rc.8"
+    prismjs "^1.15.0"
+
 "@mdpress/markdown-loader@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/markdown-loader/download/@mdpress/markdown-loader-1.0.0-rc.6.tgz#5c56b2e278dd61cd71b82452bcacb79fc51ef57d"
   integrity sha1-XFay4njdYc1xuCRSvKy3n8Ue9X0=
   dependencies:
     "@mdpress/markdown" "1.0.0-rc.6"
+    loader-utils "^1.1.0"
+    lru-cache "^5.1.1"
+
+"@mdpress/markdown-loader@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/markdown-loader/download/@mdpress/markdown-loader-1.0.0-rc.8.tgz#a01bf88d810bf8f1773c83a5fefb9e89e8cabf05"
+  integrity sha1-oBv4jYEL+PF3PIOl/vueiejKvwU=
+  dependencies:
+    "@mdpress/markdown" "1.0.0-rc.8"
     loader-utils "^1.1.0"
     lru-cache "^5.1.1"
 
@@ -1376,10 +1449,30 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
+"@mdpress/markdown@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/markdown/download/@mdpress/markdown-1.0.0-rc.8.tgz#95113866b989f3531f17e0a451d07c95bee2885d"
+  integrity sha1-lRE4ZrmJ81MfF+CkUdB8lb7iiF0=
+  dependencies:
+    "@mdpress/shared-utils" "1.0.0-rc.8"
+    markdown-it "^8.4.1"
+    markdown-it-anchor "^5.0.2"
+    markdown-it-chain "^1.3.0"
+    markdown-it-emoji "^1.4.0"
+    markdown-it-table-of-contents "^0.4.0"
+    prismjs "^1.13.0"
+
 "@mdpress/plugin-active-header-links@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/plugin-active-header-links/download/@mdpress/plugin-active-header-links-1.0.0-rc.6.tgz#d1030c09df8714b909ea474903a88f1dc8e2e25d"
   integrity sha1-0QMMCd+HFLkJ6kdJA6iPHcji4l0=
+  dependencies:
+    lodash.debounce "^4.0.8"
+
+"@mdpress/plugin-active-header-links@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/plugin-active-header-links/download/@mdpress/plugin-active-header-links-1.0.0-rc.8.tgz#321f38274505420ae15de6a3e3424047b30df2f1"
+  integrity sha1-Mh84J0UFQgrhXeaj40JAR7MN8vE=
   dependencies:
     lodash.debounce "^4.0.8"
 
@@ -1398,15 +1491,34 @@
   dependencies:
     markdown-it-container "^2.0.0"
 
+"@mdpress/plugin-container@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/plugin-container/download/@mdpress/plugin-container-1.0.0-rc.8.tgz#3df7bd50a7db6f265df9c61651a8b65940bd3f5d"
+  integrity sha1-Pfe9UKfbbyZd+cYWUai2WUC9P10=
+  dependencies:
+    markdown-it-container "^2.0.0"
+
 "@mdpress/plugin-last-updated@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/plugin-last-updated/download/@mdpress/plugin-last-updated-1.0.0-rc.6.tgz#eb07e0bea3434a4c431943735440000efb4c465d"
   integrity sha1-6wfgvqNDSkxDGUNzVEAADvtMRl0=
 
+"@mdpress/plugin-last-updated@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/plugin-last-updated/download/@mdpress/plugin-last-updated-1.0.0-rc.8.tgz#b71b799180e669e5ca8535fde1cae402c8826726"
+  integrity sha1-txt5kYDmaeXKhTX94crkAsiCZyY=
+
 "@mdpress/plugin-nprogress@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/plugin-nprogress/download/@mdpress/plugin-nprogress-1.0.0-rc.6.tgz#6a1004f20737a7787858213c90099582eaf94c2a"
   integrity sha1-ahAE8gc3p3h4WCE8kAmVgur5TCo=
+  dependencies:
+    nprogress "^0.2.0"
+
+"@mdpress/plugin-nprogress@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/plugin-nprogress/download/@mdpress/plugin-nprogress-1.0.0-rc.8.tgz#e3663c6265605ac53f46e7f347f8b5b5acf83976"
+  integrity sha1-42Y8YmVgWsU/RufzR/i1taz4OXY=
   dependencies:
     nprogress "^0.2.0"
 
@@ -1424,10 +1536,32 @@
   resolved "https://r.cnpmjs.org/@mdpress/plugin-search/download/@mdpress/plugin-search-1.0.0-rc.6.tgz#0962e190d78c863684ef5db57055c69dc992d00b"
   integrity sha1-CWLhkNeMhjaE7121cFXGncmS0As=
 
+"@mdpress/plugin-search@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/plugin-search/download/@mdpress/plugin-search-1.0.0-rc.8.tgz#6838dfbd8ef4440f6a460e3b233fe65ca62c8bef"
+  integrity sha1-aDjfvY70RA9qRg47Iz/mXKYsi+8=
+
 "@mdpress/shared-utils@1.0.0-rc.6":
   version "1.0.0-rc.6"
   resolved "https://r.cnpmjs.org/@mdpress/shared-utils/download/@mdpress/shared-utils-1.0.0-rc.6.tgz#96e1fb41d1ed670dd05575a509c35b9c584a277e"
   integrity sha1-luH7QdHtZw3QVXWlCcNbnFhKJ34=
+  dependencies:
+    chalk "^2.3.2"
+    diacritics "^1.3.0"
+    escape-html "^1.0.3"
+    fs-extra "^7.0.1"
+    globby "^9.2.0"
+    gray-matter "^4.0.1"
+    hash-sum "^1.0.2"
+    markdown-it-emoji "^1.4.0"
+    semver "^6.0.0"
+    toml "^3.0.0"
+    upath "^1.1.0"
+
+"@mdpress/shared-utils@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/shared-utils/download/@mdpress/shared-utils-1.0.0-rc.8.tgz#d9f758852e6dee18d1eca189e1ef14de4d90701f"
+  integrity sha1-2fdYhS5t7hjR7KGJ4e8U3k2QcB8=
   dependencies:
     chalk "^2.3.2"
     diacritics "^1.3.0"
@@ -1450,6 +1584,17 @@
     "@mdpress/plugin-container" "1.0.0-rc.6"
     "@mdpress/plugin-nprogress" "1.0.0-rc.6"
     "@mdpress/plugin-search" "1.0.0-rc.6"
+    react-transition-group "^4.3.0"
+
+"@mdpress/theme-default@1.0.0-rc.8":
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/@mdpress/theme-default/download/@mdpress/theme-default-1.0.0-rc.8.tgz#cf2f8d8b04f13d413350f268aab7c7ac3ccf7ed4"
+  integrity sha1-zy+NiwTxPUEzUPJoqrfHrDzPftQ=
+  dependencies:
+    "@mdpress/plugin-active-header-links" "1.0.0-rc.8"
+    "@mdpress/plugin-container" "1.0.0-rc.8"
+    "@mdpress/plugin-nprogress" "1.0.0-rc.8"
+    "@mdpress/plugin-search" "1.0.0-rc.8"
     react-transition-group "^4.3.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
@@ -8497,6 +8642,19 @@ mdpress@^1.0.0-rc.6:
     "@mdpress/core" "1.0.0-rc.6"
     "@mdpress/shared-utils" "1.0.0-rc.6"
     "@mdpress/theme-default" "1.0.0-rc.6"
+    cac "^6.5.6"
+    envinfo "^7.2.0"
+    opencollective-postinstall "^2.0.2"
+    update-notifier "^4.0.0"
+
+mdpress@^1.0.0-rc.8:
+  version "1.0.0-rc.8"
+  resolved "https://r.cnpmjs.org/mdpress/download/mdpress-1.0.0-rc.8.tgz#18736d7e35b4b82a0d8b0cbbdd0abdd022519fcb"
+  integrity sha1-GHNtfjW0uCoNiwy73Qq90CJRn8s=
+  dependencies:
+    "@mdpress/core" "1.0.0-rc.8"
+    "@mdpress/shared-utils" "1.0.0-rc.8"
+    "@mdpress/theme-default" "1.0.0-rc.8"
     cac "^6.5.6"
     envinfo "^7.2.0"
     opencollective-postinstall "^2.0.2"

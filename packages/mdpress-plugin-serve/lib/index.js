@@ -12,7 +12,7 @@ const { resolve } = require("path");
 const express = require("express");
 const chalk = require("chalk");
 const opn = require("opn");
-const ServePlugin = ({ commandName = "serve", notFoundPath = "404.html", host: optionHost, port: optionPort, staticOptions, beforeServer, afterServer, }, context) => ({
+const ServePlugin = ({ commandName = "serve", notFoundPath = "404.html", host: optionHost, port: optionPort, staticOptions, beforeServer, afterServer, removeMainfest = true }, context) => ({
     name: "mdpress-plugin-serve",
     extendCli(cli) {
         cli
@@ -33,7 +33,7 @@ const ServePlugin = ({ commandName = "serve", notFoundPath = "404.html", host: o
             // build project first if specified
             if (cliOptions.build || !has404) {
                 process.env.NODE_ENV = "production";
-                yield context.build();
+                yield context.build(removeMainfest);
                 has404 = existsSync(notFoundPath);
             }
             // ensure that a 404 file exists
@@ -44,17 +44,6 @@ const ServePlugin = ({ commandName = "serve", notFoundPath = "404.html", host: o
             const { port = optionPort || context.siteConfig.port || 8080, host = optionHost || context.siteConfig.host || "localhost", } = cliOptions;
             // express instance
             const app = express();
-            // serve static files
-            app.use(context.base, express.static(context.outDir, staticOptions));
-            // fallback to base url
-            app.get(/.*/, (req, res) => {
-                if (req.path.startsWith(context.base)) {
-                    res.sendFile(notFoundPath);
-                }
-                else {
-                    res.redirect(context.base);
-                }
-            });
             // create server
             const server = app.listen(port, host, () => __awaiter(this, void 0, void 0, function* () {
                 // apply afterServer hook
@@ -71,6 +60,17 @@ const ServePlugin = ({ commandName = "serve", notFoundPath = "404.html", host: o
             if (typeof beforeServer === "function") {
                 yield beforeServer(app, server);
             }
+            // serve static files
+            app.use(context.base, express.static(context.outDir, staticOptions));
+            // fallback to base url
+            app.get(/.*/, (req, res) => {
+                if (req.path.startsWith(context.base)) {
+                    res.sendFile(notFoundPath);
+                }
+                else {
+                    res.redirect(context.base);
+                }
+            });
         }));
     },
 });

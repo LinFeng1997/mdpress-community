@@ -8,6 +8,10 @@ export interface ServePluginOptions {
      */
     commandName?: string;
     /**
+     * remove build mainfest files
+     */
+    removeMainfest?: boolean;
+    /**
      * Path to not found page
      */
     notFoundPath?: string;

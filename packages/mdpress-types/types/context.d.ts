@@ -69,7 +69,7 @@ export interface Context {
   getSiteData: () => SiteData;
   getLibFilePath: (relative: string) => string;
   dev: () => Promise<Context>;
-  build: () => Promise<Context>;
+  build: (removeMainfest?: boolean) => Promise<Context>;
 }
 
 export interface ContextOptions {
