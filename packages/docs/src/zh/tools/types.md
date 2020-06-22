@@ -2,20 +2,22 @@
 sidebarDepth: 3
 ---
 
-# vuepress-types <GitHubLink repo="vuepress/vuepress-community"/>
+# mdpress-types <GitHubLink repo="mdpress/mdpress-community"/>
 
-目前 VuePress 并没有支持 typescript ，并且没有提供类型定义。
+目前 MdPress 并没有支持 typescript ，并且没有提供类型定义。
 
-[vuepress-plugin-typescript](../plugins/typescript.md) 提供了在 VuePress 中使用 typescript 的部分能力。如果你想获取到正确的类型定义，你可以配合 `vuepress-types` 一起使用。
+<!--
+[mdpress-plugin-typescript](../plugins/typescript.md) 提供了在 VuePress 中使用 typescript 的部分能力。如果你想获取到正确的类型定义，你可以配合 `mdpress-types` 一起使用。
+-->
 
 ::: warning 实验中
-`vuepress-types` 作为 VuePress 的类型定义包，还处于实验阶段。如果你在使用时发现任何问题，欢迎提出 Issue 。
+`mdpress-types` 作为 MdPress 的类型定义包，还处于实验阶段。如果你在使用时发现任何问题，欢迎提出 Issue 。
 :::
 
 ## 安装
 
 ```sh
-npm install -D vuepress-types
+npm install -D mdpress-types
 ```
 
 ## 使用
@@ -24,22 +26,7 @@ npm install -D vuepress-types
 
 ### 手动引入
 
-你可以手动在 `.vue` 文件中引入：
-
-```vue {2}
-<script lang="ts">
-import "vuepress-types";
-import Vue from "vue";
-import Component from "vue-class-component";
-
-@Component
-export default class App extends Vue {
-  get vuepressThemeConfig() {
-    return this.$themeConfig;
-  }
-}
-</script>
-```
+你可以手动在 `.ts` 文件中引入
 
 ### 添加到 tsconfig
 
@@ -50,7 +37,7 @@ export default class App extends Vue {
 ```json {3}
 {
   "compilerOptions": {
-    "types": ["vuepress-types"]
+    "types": ["mdpress-types"]
   }
 }
 ```
