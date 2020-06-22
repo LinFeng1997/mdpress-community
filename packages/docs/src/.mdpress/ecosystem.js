@@ -1,11 +1,7 @@
 const ecosystem = {
-  plugins: [
-    'serve',
-    'smooth-scroll',
-    'typescript'
-  ],
+  plugins: ["serve", "smooth-scroll"],
   themes: [],
-  tools: ['mergeable', 'types'],
-}
+  tools: ["types"],
+};
 
-module.exports = ecosystem
+module.exports = ecosystem;
