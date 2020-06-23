@@ -29,7 +29,7 @@ const enhanceApp = ({ routes, hooks }) => {
             if (store.$get("disableScrollBehavior")) {
                 return false;
             }
-            const targetElement = document.querySelector(location.hash);
+            const targetElement = document.querySelector(decodeURIComponent(location.hash));
             if (targetElement) {
                 return window.scrollTo({
                     top: getElementPosition(targetElement).y,
