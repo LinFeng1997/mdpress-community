@@ -78,14 +78,14 @@ mdpress-plugin-serve 会增加一个 mdpress 命令，这个选项可用于自�
 - **类型:** `(app, server) => void | Promise<void>`
 - **默认值:** `undefined`
 
-在服务器接受客户端信息之前执行。类似于 MdPress 的 [beforeDevServer](https://linfeng1997.github.io/mdpress-community/zh/plugin/option-api.html#beforedevserver) 选项。
+在服务器接受客户端信息之前执行。类似于 MdPress 的 [beforeDevServer](https://linfeng1997.github.io/mdpress/zh/plugin/option-api.html#beforedevserver) 选项。
 
 ### afterServer
 
 - **类型:** `async (app, server) => void | Promise<void>`
 - **默认值:** `undefined`
 
-在服务器接受客户端信息之后执行。类似于 MdPress 的 [afterDevServer](https://linfeng1997.github.io/mdpress-community/zh/plugin/option-api.html#afterdevserver) 选项。
+在服务器接受客户端信息之后执行。类似于 MdPress 的 [afterDevServer](https://linfeng1997.github.io/mdpress/zh/plugin/option-api.html#afterdevserver) 选项。
 
 ## CLI
 

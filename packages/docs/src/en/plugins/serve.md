@@ -2,24 +2,24 @@
 sidebarDepth: 3
 ---
 
-# vuepress-plugin-serve <GitHubLink repo="vuepress/vuepress-community"/>
+# mdpress-plugin-serve <GitHubLink repo="mdpress/mdpress-community"/>
 
-Serve generated files of your VuePress site locally.
+Serve generated files of your MdPress site locally.
 
 ## Installation
 
 ```sh
-npm install -D vuepress-plugin-serve
+npm install -D mdpress-plugin-serve
 ```
 
 ## Usage
 
 ```js
-// .vuepress/config.js
+// .mdpress/config.js
 module.exports = {
   plugins: [
     [
-      "vuepress-plugin-serve",
+      "mdpress-plugin-serve",
       {
         post: 1234,
         staticOptions: {
@@ -43,7 +43,7 @@ module.exports = {
 - **type:** `string`
 - **default:** `'serve'`
 
-vuepress-plugin-serve will add a vuepress command. This option can be used to specify the command name.
+mdpress-plugin-serve will add a mdpress command. This option can be used to specify the command name.
 
 ### host
 
@@ -78,22 +78,22 @@ Options for [serve-static](https://github.com/expressjs/serve-static#servestatic
 - **type:** `(app, server) => void | Promise<void>`
 - **default:** `undefined`
 
-Executed before the server accepts client information. Similar to VuePress's [beforeDevServer](https://vuepress.vuejs.org/en/plugin/option-api.html#beforedevserver) option.
+Executed before the server accepts client information. Similar to MdPress's [beforeDevServer](https://linfeng1997.github.io/mdpress/en/plugin/option-api.html#beforedevserver) option.
 
 ### afterServer
 
 - **type:** `async (app, server) => void | Promise<void>`
 - **default:** `undefined`
 
-Executed after the server accepts client information. Similar to VuePress's [afterDevServer](https://vuepress.vuejs.org/en/plugin/option-api.html#afterdevserver) option.
+Executed after the server accepts client information. Similar to MdPress's [afterDevServer](https://linfeng1997.github.io/mdpress/en/plugin/option-api.html#afterdevserver) option.
 
 ## CLI
 
-After using this plugin, VuePress will add a `serve` command. This command will created a server based on the generated files. It has the following options:
+After using this plugin, MdPress will add a `serve` command. This command will created a server based on the generated files. It has the following options:
 
 ### --build
 
-Execute `vuepress build` before creating the server.
+Execute `mdpress build` before creating the server.
 
 ### --open
 
@@ -108,5 +108,5 @@ See [host](#host).
 See [port](#port).
 
 ::: tip
-VuePress built-in command line options (such as `--dest <dest>`, `--cache [cache]`, `--no-cache`) are also supported.
+MdPress built-in command line options (such as `--dest <dest>`, `--cache [cache]`, `--no-cache`) are also supported.
 :::
