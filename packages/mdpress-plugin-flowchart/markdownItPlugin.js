@@ -18,7 +18,7 @@ module.exports = function flowchartPlugin(md, options = {}) {
       info.trim() || "mdpress"
     }"}></FlowChart>`;
 
-    return renderSimpleComponent(md["md-it-rc-replacer"], code);
+    return '<div>' + renderSimpleComponent(md["md-it-rc-replacer"], code) + '</div>';
   }
 
   function uml(state, startLine, endLine, silent) {
