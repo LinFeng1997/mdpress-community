@@ -12,6 +12,7 @@ MdPress 生态系统。
 | :---------------------------------------: | :-------------------------------------------: | :----------------------------------------- |
 |         [serve](plugins/serve.md)         |     <NpmLink pkg="mdpress-plugin-serve"/>     | :key: 在本地构建静态 MdPress 服务器        |
 | [smooth-scroll](plugins/smooth-scroll.md) | <NpmLink pkg="mdpress-plugin-smooth-scroll"/> | :roller_coaster: 在 MdPress 中使用平滑滚动 |
+|     [flowchart](plugins/flowchart.md)     |   <NpmLink pkg="mdpress-plugin-flowchart"/>   | :roller_coaster: 在 MdPress 中使用流程图   |
 
 ## 工具
 

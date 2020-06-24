@@ -12,6 +12,7 @@ Ecosystem for MdPress.
 | :---------------------------------------: | :-------------------------------------------: | :------------------------------------------------ |
 |         [serve](plugins/serve.md)         |     <NpmLink pkg="mdpress-plugin-serve"/>     | :key: Serve generated files in MdPress            |
 | [smooth-scroll](plugins/smooth-scroll.md) | <NpmLink pkg="mdpress-plugin-smooth-scroll"/> | :roller_coaster: Make scrolling smooth in MdPress |
+|     [flowchart](plugins/flowchart.md)     |   <NpmLink pkg="mdpress-plugin-flowchart"/>   | :roller_coaster: Use flowchart in MdPress         |
 
 ## Tools
 
