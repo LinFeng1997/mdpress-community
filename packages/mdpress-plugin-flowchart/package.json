@@ -1,0 +1,27 @@
+{
+  "name": "mdpress-plugin-flowchart",
+  "version": "1.0.0",
+  "description": "Rapid flowchart development plugin for mdpress",
+  "keywords": [
+    "flowchart",
+    "plugin",
+    "static",
+    "mdpress"
+  ],
+  "homepage": "https://github.com/mdpress",
+  "bugs": {
+    "url": "https://github.com/mdpress/mdpress-community/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdpress/mdpress-community.git"
+  },
+  "dependencies": {
+    "flowchart.js": "^1.11.3"
+  },
+  "author": "LinFeng1997",
+  "license": "MIT",
+  "devDependencies": {
+    "@mdpress/plugin-pwa": "^1.0.0-rc.6"
+  }
+}

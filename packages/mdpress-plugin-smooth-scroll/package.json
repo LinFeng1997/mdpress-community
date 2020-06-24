@@ -1,0 +1,37 @@
+{
+  "name": "mdpress-plugin-smooth-scroll",
+  "version": "1.0.0-rc.6",
+  "description": "MdPress plugin for smooth scrolling",
+  "keywords": [
+    "plugin",
+    "scroll",
+    "smooth",
+    "mdpress"
+  ],
+  "homepage": "https://github.com/mdpress",
+  "bugs": {
+    "url": "https://github.com/mdpress/mdpress-community/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdpress/mdpress-community.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "styles"
+  ],
+  "scripts": {
+    "build": "rimraf lib && tsc -p tsconfig.json",
+    "lint": "eslint --fix --ext .ts src"
+  },
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "@types/smoothscroll-polyfill": "^0.3.1"
+  }
+}

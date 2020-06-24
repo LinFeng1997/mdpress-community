@@ -1,0 +1,40 @@
+{
+  "name": "mdpress-types",
+  "version": "1.0.0-rc.1",
+  "description": "MdPress TypeScript helpers",
+  "keywords": [
+    "types",
+    "mdpress"
+  ],
+  "homepage": "https://github.com/mdpress",
+  "bugs": {
+    "url": "https://github.com/mdpress/mdpress-community/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdpress/mdpress-community.git"
+  },
+  "license": "MIT",
+  "author": "LinFeng1997",
+  "types": "types/index.d.ts",
+  "files": [
+    "types"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .ts types"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "@types/markdown-it": "^0.0.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/webpack-dev-server": "^3.1.7",
+    "cac": "^6.5.10",
+    "markdown-it": "^8.4.1",
+    "webpack": "^4.8.1",
+    "webpack-chain": "^6.0.0",
+    "webpack-dev-server": "^3.5.1"
+  },
+  "peerDependencies": {
+    "mdpress": "^1.0.0-rc.9.1"
+  }
+}

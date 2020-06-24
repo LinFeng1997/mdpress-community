@@ -1,0 +1,5 @@
+node_modules/
+!.mdpress/
+!.eslintrc.js
+!.commitlintrc.js
+lib/
