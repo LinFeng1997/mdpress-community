@@ -40,7 +40,7 @@ const enhanceApp: EnhanceApp = ({ routes, hooks }): void => {
         return false;
       }
 
-      const targetElement = document.querySelector(location.hash);
+      const targetElement = document.querySelector(decodeURIComponent(location.hash));
 
       if (targetElement) {
         return window.scrollTo({

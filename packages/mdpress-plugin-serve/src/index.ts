@@ -16,6 +16,11 @@ export interface ServePluginOptions {
   commandName?: string;
 
   /**
+   * remove build mainfest files
+   */
+  removeMainfest?: boolean;
+
+  /**
    * Path to not found page
    */
   notFoundPath?: string;
@@ -55,6 +60,7 @@ const ServePlugin: Plugin<ServePluginOptions> = (
     staticOptions,
     beforeServer,
     afterServer,
+    removeMainfest = true
   },
   context
 ) => ({
@@ -81,7 +87,7 @@ const ServePlugin: Plugin<ServePluginOptions> = (
         // build project first if specified
         if (cliOptions.build || !has404) {
           process.env.NODE_ENV = "production";
-          await context.build();
+          await context.build(removeMainfest);
           has404 = existsSync(notFoundPath);
         }
 
@@ -98,18 +104,6 @@ const ServePlugin: Plugin<ServePluginOptions> = (
 
         // express instance
         const app = express();
-
-        // serve static files
-        app.use(context.base, express.static(context.outDir, staticOptions));
-
-        // fallback to base url
-        app.get(/.*/, (req, res) => {
-          if (req.path.startsWith(context.base)) {
-            res.sendFile(notFoundPath);
-          } else {
-            res.redirect(context.base);
-          }
-        });
 
         // create server
         const server = app.listen(port, host, async () => {
@@ -131,6 +125,18 @@ const ServePlugin: Plugin<ServePluginOptions> = (
         if (typeof beforeServer === "function") {
           await beforeServer(app, server);
         }
+
+        // serve static files
+        app.use(context.base, express.static(context.outDir, staticOptions));
+
+        // fallback to base url
+        app.get(/.*/, (req, res) => {
+          if (req.path.startsWith(context.base)) {
+            res.sendFile(notFoundPath);
+          } else {
+            res.redirect(context.base);
+          }
+        });
       });
   },
 });

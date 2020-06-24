@@ -2,13 +2,13 @@
 sidebarDepth: 3
 ---
 
-# vuepress-plugin-smooth-scroll <GitHubLink repo="vuepress/vuepress-community"/>
+# mdpress-plugin-smooth-scroll <GitHubLink repo="mdpress/mdpress-community"/>
 
-在你的 VuePress 站点中使用平滑滚动。
+在你的 MdPress 站点中使用平滑滚动。
 
 这个插件简单做了两件事：
 
-1. 在 [scrollBehavior](https://router.vuejs.org/api/#scrollbehavior) 中使用 `window.scrollTo({ behavior: 'smooth' })`
+1. 在 [scrollBehavior](https://github.com/ytase/react-router-scroll#basic-usage) 中使用 `window.scrollTo({ behavior: 'smooth' })`
    - [参考](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo)
    - [浏览器兼容性](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo#Browser_Compatibility)
    - [smoothscroll-polyfill](https://github.com/iamdustan/smoothscroll)
@@ -18,26 +18,26 @@ sidebarDepth: 3
 
 ::: tip
 
-- 第一个仅对 `<RouterLink to="#anchor">` 生效
-- 第二个则对 `<RouterLink to="#anchor">` 和 `<a href="#anchor">` 都生效
+- 第一个仅对 `<Link to="#anchor">` 生效
+- 第二个则对 `<Link to="#anchor">` 和 `<a href="#anchor">` 都生效
 
 这两种特性的浏览器兼容性并不一样，所以目前我们同时使用了这两种特性。
 
-为了更好的浏览器兼容性，我们建议你尽量在你的 markdown 文件中使用 `<RouterLink to="#anchor">`。
+为了更好的浏览器兼容性，我们建议你尽量在你的 markdown 文件中使用 `<Link to="#anchor">`。
 :::
 
 ## 安装
 
 ```sh
-npm install -D vuepress-plugin-smooth-scroll
+npm install -D mdpress-plugin-smooth-scroll
 ```
 
 ## 使用
 
 ```js
-// .vuepress/config.js
+// .mdpress/config.js
 module.exports = {
-  plugins: ["vuepress-plugin-smooth-scroll"],
+  plugins: ["mdpress-plugin-smooth-scroll"],
 };
 ```
 
