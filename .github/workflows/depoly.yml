@@ -17,10 +17,11 @@ jobs:
       - name: bootstrap and build
         run: |
           npm install lerna -g
-          lerna bootstrap
+          npm run boot
           npm run build
-          npm run build:docs
-          cd packages/docs/dist
+          cd packages/docs
+          npm run build
+          cd dist
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git init
