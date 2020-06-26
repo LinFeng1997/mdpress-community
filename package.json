@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "boot": "lerna bootstrap --registry http://r.cnpmjs.org/",
-    "build": "lerna run build --stream --ignore docs",
+    "build": "lerna run build --stream --ignore *docs",
     "build:docs": "yarn workspace docs build",
     "dev": "yarn workspace docs dev --no-cache",
     "dev:docs": "yarn workspace docs dev",
