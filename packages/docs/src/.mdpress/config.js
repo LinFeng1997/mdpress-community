@@ -62,7 +62,7 @@ module.exports = () => ({
       const npmDir = path.resolve(__dirname, "../../../../node_modules") + "/";
 
       if (
-        /(^@mdpress[/\\][^/\\]*|^mdpress-[^/\\]*)[/\\](?!node_modules).*\.js$/.test(
+        /(@mdpress[/\\][^/\\]*|mdpress-[^/\\]*)[/\\](?!node_modules).*\.js$/.test(
           filePath.replace(npmDir, "")
         )
       ) {
