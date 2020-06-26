@@ -1,3 +1,4 @@
+const path = require("path");
 const ecosystem = require("./ecosystem");
 
 module.exports = () => ({
@@ -14,9 +15,9 @@ module.exports = () => ({
 
   plugins: [
     ["@mdpress/back-to-top"],
-    ['serve'],
-    ['smooth-scroll'],
-    ['flowchart']
+    ["serve"],
+    ["smooth-scroll"],
+    ["flowchart"],
   ],
 
   locales: {
@@ -54,6 +55,21 @@ module.exports = () => ({
       "/en/": getSidebar("Plugins", "Themes", "Tools"),
       "/zh/": getSidebar("插件", "主题", "工具"),
     },
+  },
+
+  chainWebpack: (chain) => {
+    chain.module.rule("react").exclude.add((filePath) => {
+      const npmDir = path.resolve(__dirname, "../../../../node_modules") + "/";
+
+      if (
+        /(^@mdpress[/\\][^/\\]*|^mdpress-[^/\\]*)[/\\](?!node_modules).*\.js$/.test(
+          filePath.replace(npmDir, "")
+        )
+      ) {
+        return false;
+      }
+      return /node_modules/.test(filePath);
+    });
   },
 
   // evergreen: () => !context.isProd,
