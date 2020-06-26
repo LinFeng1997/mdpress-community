@@ -17,7 +17,7 @@ jobs:
       - name: bootstrap and build
         run: |
           npm install lerna -g
-          lerna bootstrap
+          npm run boot
           npm run build
           npm run build:docs
           cd packages/docs/dist
