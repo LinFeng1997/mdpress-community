@@ -19,8 +19,9 @@ jobs:
           npm install lerna -g
           npm run boot
           npm run build
-          npm run build:docs
-          cd packages/docs/dist
+          cd packages/docs
+          npm run build
+          cd dist
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git init
