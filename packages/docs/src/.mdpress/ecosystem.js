@@ -1,5 +1,5 @@
 const ecosystem = {
-  plugins: ["serve", "smooth-scroll"],
+  plugins: ["serve", "smooth-scroll","flowchart"],
   themes: [],
   tools: ["types"],
 };
