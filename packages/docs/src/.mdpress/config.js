@@ -2,6 +2,7 @@ const path = require("path");
 const ecosystem = require("./ecosystem");
 
 module.exports = () => ({
+  base: "/mdpress-community/",
   head: [
     ["link", { rel: "icon", href: "/logo/600x600.png" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
