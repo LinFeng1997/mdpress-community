@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@mdpress/plugin-back-to-top": "^1.0.0-rc.6",
-    "mdpress": "^1.0.0-rc.9.3",
+    "mdpress": "^1.0.0-rc.10",
     "mdpress-plugin-serve": "1.0.0-rc.7"
   }
 }
