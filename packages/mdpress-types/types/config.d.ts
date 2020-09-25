@@ -7,7 +7,7 @@ export interface LocaleConfig extends Omit<ThemeConfig, 'locales'> {
 }
 
 /**
- * @see https://linfeng1997.github.io/mdpress/config/#markdown
+ * @see https://docschina.github.io/mdpress/config/#markdown
  */
 export interface MarkdownConfig {
   // lineNumbers?: boolean
@@ -37,7 +37,7 @@ export interface ThemeConfig {
 }
 
 /**
- * @see https://linfeng1997.github.io/mdpress/config
+ * @see https://docschina.github.io/mdpress/config
  */
 export interface SiteConfig {
   // Basic Config

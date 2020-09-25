@@ -78,14 +78,14 @@ Options for [serve-static](https://github.com/expressjs/serve-static#servestatic
 - **type:** `(app, server) => void | Promise<void>`
 - **default:** `undefined`
 
-Executed before the server accepts client information. Similar to MdPress's [beforeDevServer](https://linfeng1997.github.io/mdpress/en/plugin/option-api.html#beforedevserver) option.
+Executed before the server accepts client information. Similar to MdPress's [beforeDevServer](https://docschina.github.io/mdpress//en/plugin/option-api.html#beforedevserver) option.
 
 ### afterServer
 
 - **type:** `async (app, server) => void | Promise<void>`
 - **default:** `undefined`
 
-Executed after the server accepts client information. Similar to MdPress's [afterDevServer](https://linfeng1997.github.io/mdpress/en/plugin/option-api.html#afterdevserver) option.
+Executed after the server accepts client information. Similar to MdPress's [afterDevServer](https://docschina.github.io/mdpress//en/plugin/option-api.html#afterdevserver) option.
 
 ## CLI
 

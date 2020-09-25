@@ -6,8 +6,8 @@ import { PluginAPI } from './plugin-api'
 import { ThemeAPI } from './theme-api'
 
 /**
- * @see https://github.com/LinFeng1997/mdpress/blob/master/packages/%40mdpress/core/lib/node/App.js
- * @see https://linfeng1997.github.io/mdpress/plugin/context-api.html#ctx-isprod
+ * @see https://github.com/docschina/mdpress/blob/master/packages/%40mdpress/core/lib/node/App.js
+ * @see https://docschina.github.io/mdpress/plugin/context-api.html#ctx-isprod
  */
 
 export interface ContextConstructor {

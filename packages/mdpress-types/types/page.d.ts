@@ -4,7 +4,7 @@ import Markdown from 'markdown-it'
 import { OptionItem } from './plugin-api'
 
 /**
- * @see https://github.com/LinFeng1997/mdpress/blob/master/packages/%40mdpress/core/lib/node/Page.js
+ * @see https://github.com/docschina/mdpress/blob/master/packages/%40mdpress/core/lib/node/Page.js
  */
 
 // ==================

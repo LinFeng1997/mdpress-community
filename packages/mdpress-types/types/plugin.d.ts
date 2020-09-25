@@ -61,7 +61,7 @@ export interface PluginOptionAPI {
   extendCli?: (cli: CAC) => void;
   multiple?: boolean;
   // Life Cycle
-  // https://linfeng1997.github.io/mdpress/plugin/life-cycle.html
+  // https://docschina.github.io/mdpress/plugin/life-cycle.html
   ready?: () => void | Promise<void>;
   updated?: () => void | Promise<void>;
   generated?: (pagePaths: string[]) => void | Promise<void>;
